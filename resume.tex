@@ -1,0 +1,256 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{lmodern}
+
+%----------FONT OPTIONS----------
+% sans-serif options for font usage (uncomment as needed)
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif options for font usage (uncomment as needed)
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+% Adjusting page style
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for the page layout
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.40in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Format sections with larger bold font and section divider lines
+\titleformat{\section}
+  {\scshape\raggedright\large\bfseries}
+  {}{0em}{}
+  [\color{black}\titlerule]
+
+% \titlespacing*{command}{left}{space BEFORE}{space AFTER}
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Enable machine readability and ATS parsing for the generated PDF
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands for easier formatting and item creation
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\classesList}[4]{
+\item\small{
+{#1 #2 #3 #4 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & \textbf{\small #2} \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\vspace{-8pt}\item
+\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & \textbf{\small #2}\\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% Personal details and contact information
+\begin{center}
+{\Huge \scshape Minglang Chen} \\ \vspace{3pt}
+{{}} ~ \\ \vspace{1pt}
+\small \raisebox{-0.1\height}\faPhone\ +1(778)-889-2665 ~ \href{mailto:minglang.chen@uwaterloo.ca}{\raisebox{-0.2\height}\faEnvelope\  \underline{minglang.chen@uwaterloo.ca}} ~
+\href{https://www.linkedin.com/in/minglang-chen}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/minglang-chen}}  ~
+\href{https://minglanging.com/}{\raisebox{-0.2\height}\faGlobe\ \underline{minglanging.com}}
+
+\end{center}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.05in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt]
+\small{
+\item \textbf{Languages}{: Java, C/C++, Python, JavaScript, TypeScript, HTML/CSS, Bash, SQL}
+\item \textbf{Frameworks \& Libraries}{: React, React Native, Expo, Tailwind CSS, Node.js, Express, NumPy, Pytest}
+\item \textbf{Tools \& Platforms}{: Terminal, Git, GitHub, GitHub Actions, Supabase, Vite, Vercel, VS Code, Autodesk Fusion, Claude Code}
+\item \textbf{Technical Strengths}{: Data Structures, Algorithms, Competitive Programming, Mathematics}
+\item \textbf{Professional Skills}{: Adaptability, Critical Thinking, Collaboration, Proactivity, Work Ethic, Troubleshooting}
+}
+\end{itemize}
+
+%-----------Education-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Waterloo}{Sep 2026 -- Present}
+{Bachelor of Software Engineering (Honours, Co-op) $|$ Recipient of President's Scholarship of Distinction}{Waterloo, ON}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+% vsHacks
+\resumeSubheading
+{vsHacks}{Sept 2024 -- Present}
+{{Vice Chair} $|$ {Outreach, Web Development, GitHub, Event Operations}}{Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Co-organized vsHacks 2025 and 2026, a two-day online hackathon for high school students}
+\resumeItem{Built and maintained the event website with HTML and CSS, adding schedule and past results pages, managed the Devpost portal, and developed a Discord bot that automated sign-up verification and role assignment}
+\resumeItem{Led sponsorship outreach to companies, ran a GitHub workshop for beginners, hosted a career advising session with a Machine Learning Engineer from Microsoft, and served on the judging panel}
+\resumeItem{\textit{Accomplishments}: Drew 500+ participants and \$7K+ in funding; grew in shipping site features, event planning, and public speaking}
+\resumeItemListEnd
+
+% Physineering Club
+\resumeSubheading
+{University Hill Secondary School Physineering Club}{Sept 2025 -- June 2026}
+{{President} $|$ {Physics, Engineering, Teaching, Competition Prep}}{Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Ran weekly meetings and delivered physics and engineering lectures}
+\resumeItem{Prepared and led teams at FYKOS, the Kwantlen Science Challenge, and UBC Physics Olympics}
+\resumeItem{\textit{Accomplishments}: Learned to coordinate students of mixed experience levels}
+\resumeItemListEnd
+
+% Learning Buddies Network
+\resumeSubheading
+{Learning Buddies Network}{Oct 2025 -- May 2026}
+{{Math Mentor (Volunteer)} $|$ {Mathematics, Tutoring, Communication, Lesson Planning}}{Remote}
+\resumeItemListStart
+\resumeItem{Taught one-on-one math lessons to an elementary student twice a week, preparing a plan for each session}
+\resumeItem{Refined my teaching through post-lesson mentor discussions and regular contact with parents and coordinators}
+\resumeItem{\textit{Accomplishments}: Raised student's performance in elementary-level math; learned to adapt explanations to a young learner}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% --------Projects-------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+% Leavy
+\resumeSubheading
+{Leavy: Calendar-Based Departure Alerts}{Personal Project}
+{TypeScript · React Native · Expo · Supabase · Google Maps API · GitHub Actions}{\href{https://github.com/langchengit/leavy}{github.com/langchengit/leavy}}
+\resumeItemListStart
+\resumeItem{Built a mobile app that reads your calendars, checks live travel time with Google Maps, and alerts you when to leave}
+\resumeItem{Added Google and Apple sign-in with Supabase to sync preferences, plus a demo mode that needs no keys or accounts}
+\resumeItem{Set up GitHub Actions for lint and type checks, Claude PR reviews, and automatic CLAUDE.md updates after each merge}
+\resumeItemListEnd
+
+% Autonomous Line-Following Vehicle
+\resumeSubheading
+{Autonomous Line-Following Vehicle}{University Hill Secondary School}
+{Arduino · C++ · Embedded Hardware}{Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Built an autonomous car that follows black-tape paths with IR sensors and avoids obstacles using an ultrasonic sensor}
+\resumeItem{Programmed the control logic on Arduino, drove the wheels through a motor driver, and designed and soldered the circuit}
+\resumeItemListEnd
+
+% Zoetrope
+\resumeSubheading
+{Zoetrope}{University Hill Secondary School}
+{Arduino · C++ · Fusion 360 · 3D Printing}{Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Built a zoetrope with a team, flashing LEDs in sync with a spinning flywheel so 3D printed frames look animated}
+\resumeItem{Slowed the flywheel and raised torque with compound gears, 3D printing gears and stands to fit the supplied parts}
+\resumeItem{Modelled a hall sensor holder in Fusion 360 and used the measured flywheel RPM to set the LED flash frequency}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\begin{comment}
+\section{Skills}
+% List of skills and technical expertise
+\begin{multicols}{3}
+\begin{itemize}[itemsep=0pt, parsep=3pt]
+\item\small Scope Management
+\item Schedule Management
+\item Cost Management
+\item Quality Management
+\item Resource Management
+\item Communication Management
+\item Risk Management
+\item Procurement
+\item Stakeholder Management
+\item Software Methodology
+\item Algorithms Analysis
+\item Database Management
+\item Artificial Intelligence
+\item Internet Technology
+\item Systems Programming
+\item Computer Architecture
+\end{itemize}
+\end{multicols}
+%\vspace*{2.0\multicolsep}
+\end{comment}
+
+%-----------AWARDS-----------
+\section{Awards \& Competitions}
+\begin{itemize}[leftmargin=0.05in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt]
+\small{
+\item \textbf{Programming}{: USACO Silver Division; Canadian Computing Competition: Junior Honor Roll (full marks, 2023), Senior Top 25\% (2024)}
+\item \textbf{Mathematics}{: Euclid Contest Top 25\% (2024, 2025); AIME participant; CSMC Honor Roll (2023, 2025); Cayley Contest Honor Roll (2023); Fermat Contest Honor Roll (2024); Stanford Math Tournament (team Top 40\%)}
+\item \textbf{Physics}{: UBC Physics Olympics: 2nd place, Quizzics (2024, 2025)}
+}
+\end{itemize}
+\end{document}
